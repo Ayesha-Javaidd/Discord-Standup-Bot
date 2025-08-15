@@ -24,25 +24,23 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 # Configuration - modify these values
 CONFIGS = [{
     "name": "TEST",
-    "schedule_time_hour": "05",  
-    "schedule_time_min": "57",  
+    "schedule_time_hour": "09",  
+    "schedule_time_min": "25",  
     "target_users": [
         1402626371192225873,
         1380595817546776728
         # 1107979324033871953, # Moeez
     ],
     "questions": [
-        "How're you feeling?",
-        "What are your goals for today?",
-        "Are you satisfied?"
+       "Testinng fetching AT 9:25 ?"
     ],
-    "results_channel_id": 1394954015581667399,  # Set this to your channel ID
+    "results_channel_id": 1392785644085968896,  # Set this to your channel ID
     "timeout_minutes": 5,  # How long to wait for responses
-    "guild_id": 1392841851094171730  # Set this to your server ID
+    "guild_id": 1114153865781203086  # Set this to your server ID
 },{
     "name": "DEV",
-    "schedule_time_hour": "05",  
-    "schedule_time_min": "57",
+    "schedule_time_hour": "09",  
+    "schedule_time_min": "25",
     "target_users": [
         1402626371192225873,
         1380595817546776728
@@ -60,11 +58,9 @@ CONFIGS = [{
         # 646288518204751872, # Waris
     ],
     "questions": [
-       "How're you feeling?",
-        "What are your goals for today?",
-        "Are you satisfied?"
+        "Testinng fetching AT 9:25 ?"
     ],
-    "results_channel_id": 1392041607934509086,  # Set this to your channel ID
+    "results_channel_id": 1392785644085968896,  # Set this to your channel ID
     "timeout_minutes": 180,  # How long to wait for responses
     "guild_id": 1114153865781203086  # Set this to your server ID
 }]
@@ -562,6 +558,10 @@ if __name__ == "__main__":
     # Get bot token from environment variable
    
     TOKEN = 'PLACEHOLDER_TOKEN'
+   
+
+
+
     config_no = sys.argv[1]  # first argument
     CONFIG = CONFIGS[int(config_no) - 1] if config_no.isdigit() and 0 < int(config_no) <= len(CONFIGS) else CONFIGS[0]
     
