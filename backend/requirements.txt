@@ -1,0 +1,6 @@
+discord.py
+alembic
+python-dotenv
+httpx
+apscheduler
+pymysql
